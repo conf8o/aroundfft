@@ -22,4 +22,4 @@ def convolve(f, g):
 
     conv = ffted_f * ffted_g
     
-    return np.abs(np.fft.ifft(conv))[:original_f + original_g - 1]
+    return np.abs(np.fft.ifft(conv)[:original_f + original_g - 1])

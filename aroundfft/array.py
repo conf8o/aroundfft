@@ -25,8 +25,10 @@ def back_padding(xs: np.ndarray, n: int, a) -> np.ndarray:
     if xs.dtype != type(a):
         raise ValueError("aの型は配列xsの要素の型と一致している必要があります。")
     
-    v = np.ones(n, dtype=type(a)) * a
+    v = np.empty(n, dtype=type(a))
     v[:xs.shape[0]] = xs
+    v[xs.shape[0]:] = a
+    
     return v
 
 
