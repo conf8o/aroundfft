@@ -1,3 +1,3 @@
 # aroundfft
 
-A library around fft
+高速フーリエ変換まわりのやつ

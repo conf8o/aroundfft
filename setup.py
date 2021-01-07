@@ -6,7 +6,7 @@ setup(
     name="aroundfft",
     version="0.1.0",
     license="MIT",
-    description="高速フーリエ変換に向けたやつ",
+    description="高速フーリエ変換まわりのやつ",
     author="conf8o",
     url="https://github.com/conf8o",
     packages=find_packages(),
